@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+	/* background: linear-gradient(75deg,rgb(168, 227, 250),rgb(240, 179, 179)); */
+    /* background: rgb(0, 0, 0); */
+    background: url(images/105516e9p4i1s4po9x23wm.jpg);
+    /* backdrop-filter: blur(3px); */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow-y: auto;
+}
+.contentDIv{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: max-content; */
+    height: 70vh;
+    overflow: auto;
+    color: #fff;
+    padding-bottom: 10vh;
+	transition: ease .5s;
+}
+.contentAI{
+    margin-top: 3vh;
+    padding: 10px;
+    border-radius: 5px;
+    width: max-content;
+    max-width: 50%;
+    min-height: 30px;
+    line-height: 30px;
+    color:#000000;
+    background: rgb(255, 255, 255,0.7);
+    margin-left: 3%;
+    word-wrap: break-word;
+}
+.contentUser{
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: auto;
+    width: max-content;
+    max-width: 60%;
+    min-height: 25px;
+    margin-top: 3vh;
+    line-height: 25px;
+    color:#000000;
+    background: rgba(255, 255, 255, 0.7);
+    margin-right: 5%;
+    word-wrap: break-word;
+}
+.iptDiv{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 5%;
+    left: calc(50% - 20vw);
+    width: 40vw;
+    /* min-width: 400px; */
+    height: 50px;
+    border-radius: 10px;
+	background: rgba(255, 255, 255, 0.5);
+    /* transition: ease 10s; */
+    /* animation: iptDiv ease 10s infinite; */
+}
+@keyframes iptDiv{
+    0%{
+        background: linear-gradient(75deg,rgb(168, 227, 250),rgb(240, 179, 179));
+
+    }
+    50%{
+        background: linear-gradient(75deg,rgb(151, 220, 167),rgb(240, 179, 240));
+
+    }
+    100%{
+        background: linear-gradient(75deg,rgb(168, 227, 250),rgb(240, 179, 179));
+    }
+}
+.iptDiv input{
+    width: 95%;
+    height: 60%;
+    border: none;
+    border-radius: 5px;
+    text-indent: 5%;
+    color: #6d6d6d;
+    font-size: 12px;
+}
+.iptDiv input:focus{
+    outline: none;
+}
+.iptDiv button{
+    width: 15%;
+    height: 60%;
+    border: none;
+    border-radius: 5px;
+    background: skyblue;
+    font-size: 12px;
+    margin-left: 5%;
+    color:#484848;
+
+}
+.loadingBox{
+    display: none;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+    transition: ease 1s;
+    animation: loadingBox ease 1s infinite;
+}
+@keyframes loadingBox{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
